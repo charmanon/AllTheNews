@@ -1,0 +1,87 @@
+    <nav class="orange" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Clickhole Scraper</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Saved Articles</a></li>
+      </ul>
+
+    </div>
+  </nav>
+    <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text text-lighten-2">MongoDB News Scraper</h1>
+        <div class="row center">
+          <h4 class="header col s12 light">Clickhole Edition</h4>
+        </div>
+        <div class="row center">
+          <button id="scrape-button" class="btn-large waves-effect waves-light orange lighten-1">Scrape Articles</button>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="/assets/images/deli.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div id="wrapper">
+      {{#each article}}
+          <div class="col s12 m7">
+          <h5 class="header">{{this.title}}</h5>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="{{this.image}}">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <a href="{{this.link}}">{{this.link}}</a>
+              </div>
+              <div class="card-action">
+                <a href="#">Save article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+      {{!-- <div id="articles"></div>
+      <div id="notes"></div> --}}
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/assets/images/beef.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright Charlotte Anongos</a>
+      </div>
+    </div>
+  </footer>
+    <!--  Scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/init.js"></script>
