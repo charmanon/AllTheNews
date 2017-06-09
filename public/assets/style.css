@@ -55,3 +55,26 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.modal{
+  color: black;
+  width: 45% !important ; 
+  max-height: 30% !important ; 
+  overflow-y: hidden !important ;
+}
+
+#notes{
+  width: 55% !important ; 
+  max-height: 60% !important ; 
+  overflow-y: hidden !important ;
+}
+
+#note{
+  width:80%;
+}
+
+
+#delete-note:hover{
+  color:#ef5350 !important;
+}
+

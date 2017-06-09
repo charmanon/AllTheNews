@@ -13,17 +13,19 @@
         <br><br>
         <h1 class="header center orange-text text-lighten-2">MongoDB News Scraper</h1>
         <div class="row center">
-          <h4 class="header col s12 light">Clickhole Edition</h4>
-        </div>
-        <div class="row center">
-          <button id="scrape-button" class="trigger-modal btn-large waves-effect waves-light orange lighten-1">Scrape Articles</button>
+          <h4 class="header col s12 light">Saved Articles</h4>
         </div>
 
+
           <!-- Modal Structure -->
-          <div id="modal1" class="modal modal-fixed-footer">
-            <div class="modal-content">
-              <h4>Articles scraped</h4>
+          <div id="notes" class="modal modal-fixed-footer">
+            <div class="modal-content" id="note">
+                <h5 id="note-title"></h5>
+                <label for='titleinput'>Text</label>
+                <input id='titleinput' name='title' placeholder='Note Text'>
+                <button data-id='' id='savenote'>Save Note</button>
             </div>
+
             <div class="modal-footer">
               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">x</a>
             </div>
@@ -49,7 +51,8 @@
                     <a href="{{this.link}}">{{this.link}}</a>
                   </div>
                   <div class="card-action">
-                    <a data-id="{{this._id}}" id="save-article">Save article</a>
+                    <a id="add-note" data-id="{{this._id}}">Add Note</a>
+                    <a id="delete-note" class="red-text">Delete Note</a>
                   </div>
                 </div>
               </div>
