@@ -2,7 +2,7 @@
 	Web app that scrapes chosen news source for featured stories and saves the links and headlines. This edition features stories from Clickhole, an absurdist news site that lampoons social media websites.
 
 ## Live Link
-[Clickhole Scraper](alltheclickholes.herokuapp.com)	
+[Clickhole Scraper](http://alltheclickholes.herokuapp.com/)	
 
 ## Description on how to use the app
 	From the home page, click the scrape article button to scrape new articles from the featured news of Clickhole's website. 
